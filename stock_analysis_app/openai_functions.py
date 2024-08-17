@@ -11,7 +11,7 @@ api_key = config["OPEN_API_KEY"]
 print(config)
 
 api_key = os.getenv('OPENAI_API_KEY')
-'''
+
 # Ensure the path to the config.json file is correct
 config_path = os.path.join(os.path.dirname(__file__), 'config.json')
 
@@ -21,6 +21,8 @@ def load_api_key():
         return config.get('OPENAI_API_KEY')
 
 api_key = load_api_key()
+'''
+api_key = os.getenv('OPENAI_API_KEY')
 
 # Initialize the OpenAI client with the API key
 client = OpenAI(api_key=api_key)
