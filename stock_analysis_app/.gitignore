@@ -1,7 +1,0 @@
-# Environment variables
-app/config.json
-
-Thumbs.db  # Windows
-
-venv/
-env/
