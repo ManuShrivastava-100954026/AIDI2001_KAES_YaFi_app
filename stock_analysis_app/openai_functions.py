@@ -4,7 +4,7 @@ import json
 import os
 
 
-with open('./config.json') as f:
+with open('config.json') as f:
     config = json.load(f)
 
 api_key = config["OPEN_API_KEY"]
