@@ -1,7 +1,15 @@
+import openai
 from openai import OpenAI
 import json
+import os
 
-client = OpenAI(api_key="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")
+
+with open('./config.json') as f:
+    config = json.load(f)
+print(config)
+api_key = config["OPEN_API_KEY"]
+
+client = OpenAI(api_key=api_key)
 
 
 def get_openai_response(messages, functions=None):
