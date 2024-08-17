@@ -31,7 +31,7 @@ client = OpenAI(api_key=api_key)
 def get_openai_response(messages, functions=None):
     try:
         response = client.chat.completions.create(
-            model='gpt-4o-mini',
+            model='text-embedding-3-large',
             messages=messages,
             functions=functions,
             function_call='auto'
