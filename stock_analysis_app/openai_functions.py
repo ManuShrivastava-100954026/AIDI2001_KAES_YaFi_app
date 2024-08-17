@@ -3,12 +3,17 @@ from openai import OpenAI
 import json
 import os
 
-
+'''
 with open('config.json') as f:
     config = json.load(f)
 
 api_key = config["OPEN_API_KEY"]
 print(config)
+'''
+
+api_key = os.getenv('OPENAI_API_KEY')
+
+# Initialize the OpenAI client with the API key
 client = OpenAI(api_key=api_key)
 
 
