@@ -6,9 +6,9 @@ import os
 
 with open('./config.json') as f:
     config = json.load(f)
-print(config)
-api_key = config["OPEN_API_KEY"]
 
+api_key = config["OPEN_API_KEY"]
+print(config)
 client = OpenAI(api_key=api_key)
 
 
