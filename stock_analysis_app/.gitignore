@@ -1,0 +1,7 @@
+config/config.py
+.env
+
+Thumbs.db  # Windows
+
+venv/
+env/
