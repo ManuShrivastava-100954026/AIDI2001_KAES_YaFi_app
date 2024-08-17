@@ -1,5 +1,5 @@
 # Environment variables
-config.json
+app/config.json
 
 Thumbs.db  # Windows
 
